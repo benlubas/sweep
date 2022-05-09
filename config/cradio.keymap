@@ -1,5 +1,3 @@
-
-   
 /*
  * Copyright (c) 2020 The ZMK Contributors
  *
@@ -56,7 +54,7 @@
         util_layer {
             bindings = <
                 &trans     &trans     &trans      &trans          &trans       &trans           &trans         &kp UARW    &trans      &trans
-                &BKSP      &trans     &trans      &kp TAB         &trans       &kp BKSP         &kp LARW       &kp DARW    &kp RARW    &kp SQT
+                &kp BKSP   &trans     &trans      &kp TAB         &trans       &kp BKSP         &kp LARW       &kp DARW    &kp RARW    &kp SQT
                 &trans     &trans     &trans      &trans          &trans       &trans           &trans         &trans      &trans      &trans
                                                   &trans          &trans       &kp LCMD         &kp LALT
             >;
