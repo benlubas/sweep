@@ -47,7 +47,7 @@
                 &kp Q       &kp W      &kp E       &kp R          &kp T         &kp Y            &kp U          &kp I       &kp O      &kp P
                 &kp A       &kp S      &kp D       &kp F          &kp G         &kp H            &kp J          &kp K       &kp L      &kp SQT
                 &mt LSHIFT Z   &kp X   &kp C       &kp V          &kp B         &kp N            &kp M          &kp COMMA   &kp DOT    &mt RSHIFT RET
-                                                   &to SYM_L      &to UTIL_L    &kp SPACE        &to NUM_L
+                                                   &kp LCMD       &to UTIL_L    &kp SPACE        &lt SYM_L TAB
             >;
         };
 
@@ -56,7 +56,7 @@
                 &trans     &trans     &trans      &trans          &trans       &trans           &trans         &kp UARW    &trans      &trans
                 &kp BKSP   &trans     &trans      &kp TAB         &trans       &kp BKSP         &kp LARW       &kp DARW    &kp RARW    &kp SEMI
                 &trans     &trans     &trans      &trans          &trans       &trans           &trans         &trans      &trans      &trans
-                                                  &trans          &to DFLT     &kp LCMD         &kp LALT
+                                                  &trans          &to DFLT     &to DFLT         &kp LALT
             >;
         };
 
@@ -65,7 +65,7 @@
                 &trans     &trans     &trans      &trans          &trans       &trans           &trans         &trans      &trans     &trans
                 &trans     &trans     &trans      &trans          &trans       &trans           &trans         &trans      &trans     &trans
                 &trans     &trans     &trans      &trans          &trans       &trans           &kp HOME       &trans      &trans     &trans
-                                                  &trans          &trans       &trans           &trans
+                                                  &trans          &trans       &to DFLT           &trans
             >;
         };
 
@@ -74,7 +74,7 @@
                 &kp N1     &kp N2     &kp N3      &kp N4          &kp N5       &kp N6           &kp N7         &kp N8      &kp N9     &kp N0
                 &trans     &trans     &trans      &trans          &trans       &trans           &trans         &trans      &trans     &trans
                 &trans     &trans     &trans      &trans          &trans       &trans           &trans         &trans      &trans     &trans
-                                                  &trans          &trans       &trans           &trans
+                                                  &trans          &trans       &to DFLT           &trans
             >;
         };
 
@@ -83,7 +83,7 @@
                 &kp LS(N1)    &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)          &kp LS(N6)  &kp LS(N7)   &kp LS(N8)   &kp LS(N9)   &kp LS(N0)   
                 &kp TILDE     &trans      &kp LBKT    &kp RBKT    &kp BSLH            &trans      &kp EQUAL    &kp MINUS    &trans       &kp SEMI
                 &trans        &trans      &trans      &trans      &trans              &trans      &trans       &trans       &trans       &trans
-                                                      &trans      &trans              &trans      &trans
+                                                      &trans      &trans              &to DFLT      &trans
             >;
         };
     };
