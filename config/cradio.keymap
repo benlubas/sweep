@@ -73,9 +73,9 @@
 
         sym_layer {
             bindings = <
-                &kp LS(N1)    &kp LS(N2)  &kp LS(N3)  &kp LS(N4) &kp LS(N5)          &kp LS(N6)  &kp LS(N7)   &kp LS(N8)   &kp LS(N9)   &kp LS(N0)   
-                &kp TILDE     &trans      &kp LBKT    &kp RBKT   &BSLH            &trans   &kp EQUAL     &kp MINUS    &trans    &kp SQT
-                &trans        &trans      &trans      &trans     &trans           &trans   &trans    &trans    &trans    &trans
+                &kp LS(N1)    &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)          &kp LS(N6)  &kp LS(N7)   &kp LS(N8)   &kp LS(N9)   &kp LS(N0)   
+                &kp TILDE     &trans      &kp LBKT    &kp RBKT    &kp BSLH            &trans      &kp EQUAL    &kp MINUS    &trans       &kp SQT
+                &trans        &trans      &trans      &trans      &trans              &trans      &trans       &trans       &trans       &trans
                                                    &kp LS(N0) &kp UNDER   &trans &trans
             >;
         };
