@@ -27,7 +27,17 @@
 	    key-positions = <16 17>;
             bindings = <&kp ESC>;
         };
+	combo_win {
+	   timeout-ms = <50>;
+	   key-positions = <0 1 2 3>;	   
+	   bindings = <&to WIN_L>; 
+	};
 	
+	combo_mac {
+	   timeout-ms = <50>;
+	   key-positions = <6 7 8 9>;	   
+	   bindings = <&to MAC_L>;
+	};
 	
     };
 };
@@ -57,7 +67,7 @@
         util_layer {
             bindings = <
                 &kp N1          &kp N2     &kp N3      &kp N4          &kp N5       &kp N6           &kp N7         &kp N8      &kp N9      &kp N0
-                &kp BKSP        &trans     &trans      &kp LALT(BKSP)  &trans       &kp LARW         &kp DARW       &kp UARW    &kp RARW    &kp SEMI
+                &kp BKSP        &trans     &trans      &kp LA(BKSP)  &trans       &kp LARW         &kp DARW       &kp UARW    &kp RARW    &kp SEMI
                 &trans          &trans     &trans      &trans          &trans       &trans           &trans         &trans      &trans      &trans
                                                   &trans          &trans       &trans         &trans
             >;
