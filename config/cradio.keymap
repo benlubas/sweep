@@ -93,9 +93,9 @@
 	
 	cmnd_layer {
             bindings = <
-                &kp CMD(Q)  &kp CMD(W) &kp CMD(E)  &kp CMD(R)     &kp CMD(T)    &kp CMD(Y)       &kp CMD(U)     &kp CMD(I)  &kp CMD(O) &kp CMD(P)
-                &kp CMD(A)  &kp CMD(S) &kp CMD(D)  &kp CMD(F)     &kp CMD(G)    &kp CMD(H)       &kp CMD(J)     &kp CMD(K)  &kp CMD(L) &kp CMD(SQT)
-                &kp CMD(Z)  &kp CMD(X) &kp CMD(C)  &kp CMD(V)     &kp CMD(B)    &kp CMD(N)       &kp CMD(M)     &kp CMD(COMMA)  &kp CMD(DOT) &kp CMD(FSLH)
+                &kp LG(Q)  &kp LG(W) &kp LG(E)  &kp LG(R)     &kp LG(T)    &kp LG(Y)       &kp LG(U)     &kp LG(I)  &kp LG(O) &kp LG(P)
+                &kp LG(A)  &kp LG(S) &kp LG(D)  &kp LG(F)     &kp LG(G)    &kp LG(H)       &kp LG(J)     &kp LG(K)  &kp LG(L) &kp LG(SQT)
+                &kp LG(Z)  &kp LG(X) &kp LG(C)  &kp LG(V)     &kp LG(B)    &kp LG(N)       &kp LG(M)     &kp LG(COMMA)  &kp LG(DOT) &kp LG(FSLH)
                                                       &trans          &trans       &trans         &trans
             >;
         };
