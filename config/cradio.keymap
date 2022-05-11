@@ -28,17 +28,7 @@
             bindings = <&kp ESC>;
         };
 	
-	combo_win {
-	   timeout-ms = <50>;
-	   key-positions = <0 1 2 3>;	   
-	   bindings = <&to WIN_L>; 
-	};
 	
-	combo_mac {
-	   timeout-ms = <50>;
-	   key-positions = <6 7 8 9>;	   
-	   bindings = <&to MAC_L>;
-	};
     };
 };
 
