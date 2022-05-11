@@ -11,6 +11,7 @@
 #define DFLT 0
 #define UTIL_L 1
 #define SYM_L 2
+#define CTRL_L 3
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 &lt { quick_tap_ms = <200>; };
@@ -45,7 +46,7 @@
                 &kp Q       &kp W      &kp E       &kp R          &kp T         &kp Y            &kp U          &kp I       &kp O      &kp P
                 &kp A       &kp S      &kp D       &kp F          &kp G         &kp H            &kp J          &kp K       &kp L      &kp SQT
                 &mt LSHIFT Z   &kp X   &kp C       &kp V          &kp B         &kp N            &kp M          &kp COMMA   &kp DOT    &mt RSHIFT RET
-                                                   &kp LCMD       &to UTIL_L    &kp SPACE        &lt SYM_L TAB
+                                                   &mo CTRL_L     &mo UTIL_L    &lt SYM_L SPACE  &mt CTRL TAB
             >;
         };
 
@@ -64,6 +65,15 @@
                 &trans        &kp GRAVE   &kp LBKT    &kp RBKT    &kp BSLH            &kp FSLH      &kp EQUAL    &kp MINUS    &kp SEMI     &trans
                 &trans        &kp TILDE   &kp LBRC    &kp RBRC    &kp PIPE            &kp QUESTION  &kp PLUS     &kp UNDER    &kp COLN     &trans                                                        &trans          &trans       &to DFLT         &kp LALT
                                                       &trans      &trans              &to DFLT      &trans
+            >;
+        };
+
+        cmnd_layer {
+            bindings = <
+                &kp CTRL(Q)  &kp CTRL(W) &kp CTRL(E)  &kp CTRL(R)     &kp CTRL(T)    &kp CTRL(Y)       &kp CTRL(U)     &kp CTRL(I)  &kp CTRL(O) &kp CTRL(P)
+                &kp CTRL(A)  &kp CTRL(S) &kp CTRL(D)  &kp CTRL(F)     &kp CTRL(G)    &kp CTRL(H)       &kp CTRL(J)     &kp CTRL(K)  &kp CTRL(L) &kp SQT
+                &kp CTRL(Z)  &kp CTRL(X) &kp CTRL(C)  &kp CTRL(V)     &kp CTRL(B)    &kp CTRL(N)       &kp CTRL(M)     &kp CTRL(COMMA)  &kp CTRL(DOT) &mt RSHIFT RET
+                                                      &trans          &trans       &kp LALT         &trans
             >;
         };
     };
