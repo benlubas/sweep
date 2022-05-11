@@ -8,10 +8,12 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define DFLT 0
-#define UTIL_L 1
-#define SYM_L 2
-#define CTRL_L 3
+#define MAC_L 0
+#define WIN_L 1
+#define UTIL_L 2
+#define SYM_L 3
+#define CTRL_L 4
+#define CMD_L 5
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 &lt { quick_tap_ms = <200>; };
@@ -41,20 +43,29 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        mac_base {
             bindings = <
                 &kp Q       &kp W      &kp E       &kp R          &kp T         &kp Y            &kp U          &kp I       &kp O      &kp P
                 &kp A       &kp S      &kp D       &kp F          &kp G         &kp H            &kp J          &kp K       &kp L      &kp SQT
                 &mt LSHIFT Z   &kp X   &kp C       &kp V          &kp B         &kp N            &kp M          &kp COMMA   &kp DOT    &mt RSHIFT RET
-                                                   &mo CTRL_L     &mo UTIL_L    &lt SYM_L SPACE  &mt CTRL TAB
+                                                   &mo CMD_L     &mo UTIL_L    &lt SYM_L SPACE  &mt RCTRL TAB
+            >;
+        };
+	
+	win_base {
+            bindings = <
+                &kp Q       &kp W      &kp E       &kp R          &kp T         &kp Y            &kp U          &kp I       &kp O      &kp P
+                &kp A       &kp S      &kp D       &kp F          &kp G         &kp H            &kp J          &kp K       &kp L      &kp SQT
+                &mt LSHIFT Z   &kp X   &kp C       &kp V          &kp B         &kp N            &kp M          &kp COMMA   &kp DOT    &mt RSHIFT RET
+                                                   &mo CTRL_L     &mo UTIL_L    &lt SYM_L SPACE  &mt RCTRL TAB
             >;
         };
 
         util_layer {
             bindings = <
-                &trans     &kp N7     &kp N8      &kp N9          &trans       &trans           &none          &kp UARW    &none       &trans
-                &kp BKSP   &kp N4     &kp N5      &kp N6          &kp N0       &kp BKSP         &kp LARW       &kp DARW    &kp RARW    &kp SEMI
-                &trans     &kp N1     &kp N2      &kp N3          &trans       &trans           &trans         &trans      &trans      &trans
+                &kp N1   &kp N2     &kp N3     &kp N4          &N5       &N6           &N7         &N8      &N9      &N0
+                &kp BKSP        &trans     &trans      &ALT(BKSP)      &trans       &kp LARW         &kp DARW       &kp UARW    &kp RARW    &kp SEMI
+                &trans          &trans     &trans      &trans          &trans       &trans           &trans         &trans      &trans      &trans
                                                   &trans          &trans       &to DFLT         &kp LALT
             >;
         };
@@ -68,13 +79,23 @@
             >;
         };
 
-        cmnd_layer {
+        ctrl_layer {
             bindings = <
-                &kp CTRL(Q)  &kp CTRL(W) &kp CTRL(E)  &kp CTRL(R)     &kp CTRL(T)    &kp CTRL(Y)       &kp CTRL(U)     &kp CTRL(I)  &kp CTRL(O) &kp CTRL(P)
-                &kp CTRL(A)  &kp CTRL(S) &kp CTRL(D)  &kp CTRL(F)     &kp CTRL(G)    &kp CTRL(H)       &kp CTRL(J)     &kp CTRL(K)  &kp CTRL(L) &kp SQT
-                &kp CTRL(Z)  &kp CTRL(X) &kp CTRL(C)  &kp CTRL(V)     &kp CTRL(B)    &kp CTRL(N)       &kp CTRL(M)     &kp CTRL(COMMA)  &kp CTRL(DOT) &mt RSHIFT RET
+                &kp RC(Q)  &kp RC(W) &kp RC(E)  &kp RC(R)     &kp RC(T)    &kp RC(Y)       &kp RC(U)     &kp RC(I)  &kp RC(O) &kp RC(P)
+                &kp RC(A)  &kp RC(S) &kp RC(D)  &kp RC(F)     &kp RC(G)    &kp RC(H)       &kp RC(J)     &kp RC(K)  &kp RC(L) &kp RC(SQT)
+                &kp RC(Z)  &kp RC(X) &kp RC(C)  &kp RC(V)     &kp RC(B)    &kp RC(N)       &kp RC(M)     &kp RC(COMMA)  &kp RC(DOT) &kp RC(FSLH)
                                                       &trans          &trans       &kp LALT         &trans
             >;
         };
+	
+	cmnd_layer {
+            bindings = <
+                &kp CMD(Q)  &kp CMD(W) &kp CMD(E)  &kp CMD(R)     &kp CMD(T)    &kp CMD(Y)       &kp CMD(U)     &kp CMD(I)  &kp CMD(O) &kp CMD(P)
+                &kp CMD(A)  &kp CMD(S) &kp CMD(D)  &kp CMD(F)     &kp CMD(G)    &kp CMD(H)       &kp CMD(J)     &kp CMD(K)  &kp CMD(L) &kp CMD(SQT)
+                &kp CMD(Z)  &kp CMD(X) &kp CMD(C)  &kp CMD(V)     &kp CMD(B)    &kp CMD(N)       &kp CMD(M)     &kp CMD(COMMA)  &kp CMD(DOT) &kp CMD(FSLH)
+                                                      &trans          &trans       &kp LALT         &trans
+            >;
+        };
+	
     };
 };
