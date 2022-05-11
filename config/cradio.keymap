@@ -27,19 +27,22 @@
 	    key-positions = <16 17>;
             bindings = <&kp ESC>;
         };
+	
+	combo_win {
+	   timeout-ms = <50>;
+	   key-positions = <0 1 2 3>;	   
+	   bindings = <&to WIN_L>; 
+	};
+	
+	combo_mac {
+	   timeout-ms = <50>;
+	   key-positions = <6 7 8 9>;	   
+	   bindings = <&to MAC_L>;
+	};
     };
 };
 
 / {
-    behaviors {
-        tdCtrl: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPCTRL";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp N1>, <&kp N2>, <&kp N3>;
-        };
-    };
     keymap {
         compatible = "zmk,keymap";
 
@@ -48,7 +51,7 @@
                 &kp Q       &kp W      &kp E       &kp R          &kp T         &kp Y            &kp U          &kp I       &kp O      &kp P
                 &kp A       &kp S      &kp D       &kp F          &kp G         &kp H            &kp J          &kp K       &kp L      &kp SQT
                 &mt LSHIFT Z   &kp X   &kp C       &kp V          &kp B         &kp N            &kp M          &kp COMMA   &kp DOT    &mt RSHIFT RET
-                                                   &mo CMD_L     &mo UTIL_L    &lt SYM_L SPACE  &mt RCTRL TAB
+                                                   &mo CMD_L      &mo UTIL_L    &lt SYM_L SPACE  &mt RCTRL TAB
             >;
         };
 	
@@ -63,19 +66,19 @@
 
         util_layer {
             bindings = <
-                &kp N1   &kp N2     &kp N3     &kp N4          &N5       &N6           &N7         &N8      &N9      &N0
+                &kp N1          &kp N2     &kp N3      &kp N4          &kp N5       &kp N6           &kp N7         &kp N8      &kp N9      &kp N0
                 &kp BKSP        &trans     &trans      &ALT(BKSP)      &trans       &kp LARW         &kp DARW       &kp UARW    &kp RARW    &kp SEMI
                 &trans          &trans     &trans      &trans          &trans       &trans           &trans         &trans      &trans      &trans
-                                                  &trans          &trans       &to DFLT         &kp LALT
+                                                  &trans          &trans       &trans         &trans
             >;
         };
 
         sym_layer {
             bindings = <
-                &kp LS(N1)    &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)          &kp LS(N6)  &kp LS(N7)   &kp LS(N8)   &kp LS(N9)   &kp LS(N0)   
-                &trans        &kp GRAVE   &kp LBKT    &kp RBKT    &kp BSLH            &kp FSLH      &kp EQUAL    &kp MINUS    &kp SEMI     &trans
-                &trans        &kp TILDE   &kp LBRC    &kp RBRC    &kp PIPE            &kp QUESTION  &kp PLUS     &kp UNDER    &kp COLN     &trans                                                        &trans          &trans       &to DFLT         &kp LALT
-                                                      &trans      &trans              &to DFLT      &trans
+                &kp LS(N1)    &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)          &kp LS(N6)   &kp LS(N7)   &kp LS(N8)   &kp LS(N9)   &kp LS(N0)   
+                &trans        &kp GRAVE   &kp LBKT    &kp RBKT    &kp BSLH            &trans       &kp EQUAL    &kp MINUS    &kp SEMI     &kp FLSH
+                &trans        &kp TILDE   &kp LBRC    &kp RBRC    &kp PIPE            &trans       &kp PLUS     &kp UNDER    &kp COLN     &kp QUESTION 
+                                                      &trans      &trans              &trans       &trans
             >;
         };
 
@@ -84,7 +87,7 @@
                 &kp RC(Q)  &kp RC(W) &kp RC(E)  &kp RC(R)     &kp RC(T)    &kp RC(Y)       &kp RC(U)     &kp RC(I)  &kp RC(O) &kp RC(P)
                 &kp RC(A)  &kp RC(S) &kp RC(D)  &kp RC(F)     &kp RC(G)    &kp RC(H)       &kp RC(J)     &kp RC(K)  &kp RC(L) &kp RC(SQT)
                 &kp RC(Z)  &kp RC(X) &kp RC(C)  &kp RC(V)     &kp RC(B)    &kp RC(N)       &kp RC(M)     &kp RC(COMMA)  &kp RC(DOT) &kp RC(FSLH)
-                                                      &trans          &trans       &kp LALT         &trans
+                                                      &trans          &trans       &trans       &trans
             >;
         };
 	
@@ -93,7 +96,7 @@
                 &kp CMD(Q)  &kp CMD(W) &kp CMD(E)  &kp CMD(R)     &kp CMD(T)    &kp CMD(Y)       &kp CMD(U)     &kp CMD(I)  &kp CMD(O) &kp CMD(P)
                 &kp CMD(A)  &kp CMD(S) &kp CMD(D)  &kp CMD(F)     &kp CMD(G)    &kp CMD(H)       &kp CMD(J)     &kp CMD(K)  &kp CMD(L) &kp CMD(SQT)
                 &kp CMD(Z)  &kp CMD(X) &kp CMD(C)  &kp CMD(V)     &kp CMD(B)    &kp CMD(N)       &kp CMD(M)     &kp CMD(COMMA)  &kp CMD(DOT) &kp CMD(FSLH)
-                                                      &trans          &trans       &kp LALT         &trans
+                                                      &trans          &trans       &trans         &trans
             >;
         };
 	
