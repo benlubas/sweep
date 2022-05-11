@@ -10,10 +10,9 @@
 
 #define MAC_L 0
 #define WIN_L 1
-#define UTIL_L 2
-#define SYM_L 3
-#define CTRL_L 4
-#define CMD_L 5
+#define WIN_UTIL 2
+#define MAC_UTIL 3
+#define SYM_L 4
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 &lt { quick_tap_ms = <200>; };
@@ -51,7 +50,7 @@
                 &kp Q       &kp W      &kp E       &kp R          &kp T         &kp Y            &kp U          &kp I       &kp O      &kp P
                 &kp A       &kp S      &kp D       &kp F          &kp G         &kp H            &kp J          &kp K       &kp L      &kp SQT
                 &mt LSHIFT Z   &kp X   &kp C       &kp V          &kp B         &kp N            &kp M          &kp COMMA   &kp DOT    &mt RSHIFT RET
-                                                   &kp LCMND      &mo UTIL_L    &lt SYM_L SPACE  &mt RCTRL TAB
+                                                   &kp LCMND      &mo MAC_UTIL  &lt SYM_L SPACE  &mt RCTRL TAB
             >;
         };
 	
@@ -60,14 +59,14 @@
                 &kp Q       &kp W      &kp E       &kp R          &kp T         &kp Y            &kp U          &kp I       &kp O      &kp P
                 &kp A       &kp S      &kp D       &kp F          &kp G         &kp H            &kp J          &kp K       &kp L      &kp SQT
                 &mt LSHIFT Z   &kp X   &kp C       &kp V          &kp B         &kp N            &kp M          &kp COMMA   &kp DOT    &mt RSHIFT RET
-                                                   &kp LCTRL      &mo UTIL_L    &lt SYM_L SPACE  &mt RCTRL TAB
+                                                   &kp LCTRL      &mo WIN_UTIL  &lt SYM_L SPACE  &mt RCTRL TAB
             >;
         };
 
         win_util {
             bindings = <
                 &kp N1          &kp N2     &kp N3      &kp N4          &kp N5       &kp N6           &kp N7         &kp N8      &kp N9      &kp N0
-                &kp BKSP        &trans     &trans      &kp LA(BKSP)    &trans       &kp LARW         &kp DARW       &kp UARW    &kp RARW    &kp SEMI
+                &kp BKSP        &trans     &trans      &kp LC(BKSP)    &trans       &kp LARW         &kp DARW       &kp UARW    &kp RARW    &kp SEMI
                 &trans          &trans     &trans      &trans          &trans       &trans           &trans         &trans      &trans      &trans
                                                   &trans          &trans       &trans         &trans
             >;
