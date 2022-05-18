@@ -8,9 +8,21 @@ I'll add a picture at some point, but for now, just go look up "ferris sweep" th
 
 After about a week of using this thing I've decided that I like chording and sticky layer better than permenant layer toggles. But that might change at any time. 
 
+### Only 34 Keys
+
+I don't think that this number of keys is the most optimal. Definitely not for most people, but not for me either. I think I want another thumb key on each hand. 
+
+The thing that's really bothering me is how I have to have a layer toggle under my space bar, and how I have tab under my left thumb's backspace key. The makes both of those layers that I use all the time come out slower and require a 50 ms hold for them work (this hold it to avoid accidentally triggering the hold action when you were just pressing the key - especially valuable for the space bar, but especially annoying for my tab key that gives me my arrows, backspace, and numbers...
+
+This is definitly possible to just remedy with an improved keymap though. I don't *need* another thumb key. But the places that I would have to put things would make the typing experience a lot less desireable and I'm kinda getting used to this... I think that i might just try to lower the trigger time on my left thumb key, or just put tab on a combo... because I really only use tab for like monkey type alt tabing... I could also put alt tab behind a layer... I kinda like that idea actually.
+
 ### Typeing Speed
 
 I will also say that after about a week I'm back up to about 80% of my average typing speed on a normal keyboard in general typing (for context, normal speed is just under 100 wpm). For programming I'm still at like 60% of what I can do on a mac keyboard. This speed is still good enough for me to use though. I don't feel like it hinders me too too much, and I can clearly see myself improving daily. 
+
+After a week and a half I'm pretty much up to 100% of my old typing speed for normal text. 
+
+I'd say I'm still only at 80% of my old programming speed. But this is more than enough for me to keep up with my day job. So that's great. 
 
 ### Firmware 
 
