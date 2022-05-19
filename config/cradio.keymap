@@ -50,7 +50,7 @@
 	   bindings = <&caps_word>;
 	};
 	combo_del {
-	   timeout-ms = <50>;
+	   timeout-ms = <70>;
 	   key-positions = <19 29>;
 	   bindings = <&kp DEL>;
 	};
@@ -67,7 +67,7 @@
                 &kp Q       &kp W      &kp E       &kp R           &kp T             &kp Y            &kp U          &kp I       &kp O      &kp P
                 &kp A       &kp S      &kp D       &kp F           &kp G             &kp H            &kp J          &kp K       &kp L      &kp SQT
                 &mt LSHIFT Z   &kp X   &kp C       &kp V           &kp B             &kp N            &kp M          &kp COMMA   &kp DOT    &mt RSHIFT RET
-                                                   &mo LGUI        &mo MAC_UTIL      &lt SYM_L SPACE  &mt RCTRL TAB
+                                                   &kp LGUI        &mo MAC_UTIL      &lt SYM_L SPACE  &mt RCTRL TAB
             >;
         };
 	
@@ -76,7 +76,7 @@
                 &kp Q       &kp W      &kp E       &kp R           &kp T             &kp Y            &kp U          &kp I       &kp O      &kp P
                 &kp A       &kp S      &kp D       &kp F           &kp G             &kp H            &kp J          &kp K       &kp L      &kp SQT
                 &mt LSHIFT Z   &kp X   &kp C       &kp V           &kp B             &kp N            &kp M          &kp COMMA   &kp DOT    &mt RSHIFT RET
-                                                   &mo LCTRL       &lt WIN_UTIL      &lt SYM_L SPACE  &mt LALT TAB
+                                                   &kp LCTRL       &mo WIN_UTIL      &lt SYM_L SPACE  &mt LALT TAB
             >;
         };
 
