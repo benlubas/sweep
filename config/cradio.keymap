@@ -51,7 +51,7 @@
 	};
 	combo_del {
 	   timeout-ms = <70>;
-	   key-positions = <19 29>;
+	   key-positions = <9 19>;
 	   bindings = <&kp DEL>;
 	};
     };
