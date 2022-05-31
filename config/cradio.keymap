@@ -110,19 +110,19 @@
 
         win_num {
             bindings = <
-                &kp LALT    &kp N7     &kp N8      &kp N9          &kp PLUS         &trans           &trans         &trans      &trans      &trans          
-                &kp LCTRL   &kp N4     &kp N5      &kp N6          &kp MINUS        &kp LARW         &kp DARW       &kp UARW    &kp RARW    &trans
-                &kp LGUI    &kp N1     &kp N2      &kp N3          &kp N0           &trans           &trans         &trans      &trans      &trans
-                                                   &mo WIN_FN      &to WIN_UTIL     &to WIN_L        &trans
+                &kp LGUI    &kp N7     &kp N8      &kp N9          &kp MINUS        &trans           &mo WIN_FN     &trans      &trans      &trans          
+                &kp N0      &kp N4     &kp N5      &kp N6          &kp PLUS         &kp LARW         &kp DARW       &kp UARW    &kp RARW    &trans
+                &trans      &kp N1     &kp N2      &kp N3          &trans           &trans           &trans         &trans      &trans      &trans
+                                                   &kp LCTRL       &to WIN_UTIL     &to WIN_L        &kp LALT
             >;
         };
         
         mac_num {
             bindings = <
-                &kp LALT    &kp N7     &kp N8      &kp N9          &kp PLUS         &trans           &trans         &trans      &trans      &trans          
-                &kp LCTRL   &kp N4     &kp N5      &kp N6          &kp MINUS        &kp LARW         &kp DARW       &kp UARW    &kp RARW    &trans
-                &kp LGUI    &kp N1     &kp N2      &kp N3          &kp N0           &trans           &trans         &trans      &trans      &trans           
-                                                   &mo MAC_FN      &to MAC_UTIL     &to MAC_L        &trans
+                &kp LALT    &kp N7     &kp N8      &kp N9          &kp MINUS        &trans           &mo MAC_FN     &trans      &trans      &trans          
+                &kp N0      &kp N4     &kp N5      &kp N6          &kp PLUS         &kp LARW         &kp DARW       &kp UARW    &kp RARW    &trans
+                &trans      &kp N1     &kp N2      &kp N3          &trans           &trans           &trans         &trans      &trans      &trans           
+                                                   &kp LGUI        &to MAC_UTIL     &to MAC_L        &kp LCTRL
             >;
         };
 
