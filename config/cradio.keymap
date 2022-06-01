@@ -67,6 +67,7 @@
     };
 };
 
+
 / {
 
     keymap {
@@ -92,8 +93,8 @@
 
         win_util {
             bindings = <
-                &trans      &trans      &trans      &trans          &trans           &trans           &trans         &trans      &trans      &trans      
-                &kp BKSP    &to WIN_SYM &kp LALT    &kp LC(BKSP)    &kp TAB          &kp LARW         &kp DARW       &kp UARW    &kp RARW    &to WIN_NUM
+                &trans      &trans      &trans      &trans          &trans           &kp LC(LS(TAB))  &trans         &trans      &kp LC(TAB) &trans      
+                &to WIN_SYM &kp BKSP    &kp LALT    &kp LC(BKSP)    &kp TAB          &kp LARW         &kp DARW       &kp UARW    &kp RARW    &to WIN_NUM
                 &trans      &trans      &trans      &trans          &trans           &trans           &trans         &trans      &trans      &trans      
                                                     &trans          &to WIN_UTIL     &to WIN_L        &kp LALT
             >;
@@ -102,7 +103,7 @@
         mac_util {
             bindings = <
                 &trans      &trans      &trans      &trans          &trans           &trans           &trans         &trans      &trans      &trans      
-                &kp BKSP    &to MAC_SYM &kp LGUI    &kp LA(BKSP)    &kp TAB          &kp LARW         &kp DARW       &kp UARW    &kp RARW    &to MAC_NUM
+                &to MAC_SYM &kp BKSP    &kp LGUI    &kp LA(BKSP)    &kp TAB          &kp LARW         &kp DARW       &kp UARW    &kp RARW    &to MAC_NUM
                 &trans      &trans      &trans      &trans          &trans           &trans           &trans         &trans      &trans      &trans      
                                                     &trans          &to MAC_UTIL     &to MAC_L        &kp LCTRL
             >;
