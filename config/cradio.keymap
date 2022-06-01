@@ -102,7 +102,7 @@
 
         mac_util {
             bindings = <
-                &trans      &trans      &trans      &trans          &trans           &trans           &trans         &trans      &trans      &trans      
+                &trans      &trans      &trans      &trans          &trans           &kp LG(LA(LARW)) &trans         &trans      &kp LG(LA(RARW)) &trans      
                 &to MAC_SYM &kp BKSP    &kp LGUI    &kp LA(BKSP)    &kp TAB          &kp LARW         &kp DARW       &kp UARW    &kp RARW    &to MAC_NUM
                 &trans      &trans      &trans      &trans          &trans           &trans           &trans         &trans      &trans      &trans      
                                                     &trans          &to MAC_UTIL     &to MAC_L        &kp LCTRL
