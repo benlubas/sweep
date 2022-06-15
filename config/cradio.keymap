@@ -34,10 +34,17 @@
 / {
     combos {
         compatible = "zmk,combos";
-        combo_esc {
+        combo_esc_win {
             timeout-ms = <50>;
 	        key-positions = <16 17>;
-            bindings = <&kp ESC>;
+            bindings = <&to WIN_L &kp ESC>;
+            layers = <WIN_L WIN_FN WIN_NUM WIN_SYM WIN_UTIL>;
+        };
+        combo_esc_mac {
+            timeout-ms = <50>;
+	        key-positions = <16 17>;
+            bindings = <&to MAC_L &kp ESC>;
+            layers = <MAC_L MAC_NUM MAC_SYM MAC_UTIL MAC_FN>;
         };
         combo_win {
             timeout-ms = <85>;
